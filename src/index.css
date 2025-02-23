@@ -10,10 +10,12 @@ body {
 @theme {
   /* primary */
   --color-primary: #04347f;
+  --color-primary-light: #474ebb;
   /* secondary */
-  --color-secondary: #474ebb;
+  --color-secondary: #828282;
+  --color-secondary-light: #c4c4c4;
   /* background */
-  --color-bg: #c4c4c4;
+  --color-bg: #b8b8b8;
   /* border */
   --color-border: #dadada;
 }
