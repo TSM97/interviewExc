@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  touch-action: pan-x pan-y;
+}
+
+@theme {
+  /* primary */
+  --color-primary: #04347f;
+  /* secondary */
+  --color-secondary: #474ebb;
+  /* background */
+  --color-bg: #c4c4c4;
+  /* border */
+  --color-border: #dadada;
+}
