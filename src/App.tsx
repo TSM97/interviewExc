@@ -6,10 +6,10 @@ import { Dashboard } from "./Components/Dashboard";
 
 function App() {
   return (
-    <main id="main" className="w-screen min-h-screen">
+    <main id="main" className="min-w-screen min-h-screen">
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/*" element={<Dashboard />} />
       </Routes>
     </main>
   );

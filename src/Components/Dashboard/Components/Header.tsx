@@ -1,7 +1,14 @@
+import { useLocation } from "react-router-dom";
+import { pageConfig, pagePathsType } from "../../../pageConfig";
+
 export default function Header() {
+  const { pathname } = useLocation();
+
   return (
     <header className="h-[10vh] w-full border-b-2 border-border flex items-center justify-between px-5">
-      <div className="text-3xl font-semibold">Κεντρική σελίδα</div>
+      <div className="text-2xl font-semibold">
+        {pageConfig[pathname as pagePathsType]}
+      </div>
       <div className="relative min-w-[600px]">
         <input
           type="text"
