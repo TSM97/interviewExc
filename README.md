@@ -14,3 +14,9 @@
 
 * Totally finished UI - including svgs and data - no responsiveness!
 * Added Interactive Content using NavLinks for Routing + Dynamic Sidebar styling. 
+
+## Commit 4 - Implement( dummy authentication with fake api call, Add contextProvider for userSession to navigate )
+
+* Implemented fully working singIn with fake data. A dummy fakeFetch just like how a login api would work (I believe).
+* Added styling for wrong credentials.
+* Added context Provider for userSessions while navigating.
