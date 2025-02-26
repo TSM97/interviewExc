@@ -17,6 +17,15 @@
 
 ## Commit 4 - Implement( dummy authentication with fake api call, Add contextProvider for userSession to navigate ) (5h)
 
-* Implemented fully working singIn with fake data. A dummy fakeFetch just like how a login api would work (I believe).
+* Implemented fully working singIn with fake data. A dummy fakeFetch just like how a login api would work.
 * Added styling for wrong credentials.
 * Added context Provider for userSessions while navigating.
+
+## Commit 5 - Added ( show password at inputLogin ) (2h)
+
+* Added show password eyeSVG at password input
+* implemented indicative responsiveness at login page.
+
+## All other commits - fix bug ( tailwind couldn't compile on first run after project clone ) (1h)
+
+*fixed ( problem in dependencies - faulty installation )
