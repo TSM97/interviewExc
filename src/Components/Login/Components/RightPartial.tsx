@@ -63,7 +63,7 @@ export default function RightPartial() {
             }}
             placeholder=""
             className={`custom-input py-4 px-3 mt-2 ${
-              error && "!ring-red-400 !text-red-400"
+              error && " custom-input-error"
             }`}
             autoComplete="username"
             required
@@ -85,7 +85,7 @@ export default function RightPartial() {
               id="password"
               placeholder=""
               className={`custom-input py-4 px-3 pr-10 ${
-                error && "!ring-red-400 !text-red-400"
+                error && "custom-input-error"
               }`}
               autoComplete="password"
               required
