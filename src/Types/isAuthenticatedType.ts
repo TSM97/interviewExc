@@ -1,6 +1,6 @@
 export type sessionType = {
   isAuthenticated: boolean | undefined;
-  user?: string;
+  user: string | undefined;
 };
 
 export type isAuthenticatedType = {

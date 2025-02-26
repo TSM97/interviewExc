@@ -9,7 +9,10 @@ const authenticate = async (username: string, password: string) => {
     const data = await response.json();
     return { ok: true, data };
   } catch (error) {
-    return { ok: false, message: error.message };
+    if (error instanceof Error) {
+      return { ok: false, message: error.message };
+    }
+    return { ok: false, message: "Άγνωστο σφάλμα" };
   }
 };
 

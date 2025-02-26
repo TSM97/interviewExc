@@ -1,6 +1,8 @@
 export { default as ElipseSVG } from "./HomePage/ElipseSVG";
 export { default as LoginSVG } from "./LoginSVG";
 export { default as LogoSVG } from "./LogoSVG";
+export { default as LoginEyeSVG } from "./LoginEyeSVG";
+export { default as LoginEyesShowSVG } from "./LoginEyesShowSVG";
 export { default as NavOption } from "./NavOption";
 export { default as Group1Icon } from "./Sidebar/Group1Icon";
 export { default as Group2Icon } from "./Sidebar/Group2Icon";

@@ -1,3 +1,4 @@
+import users from "../users.json";
 function fakeFetch(
   url: string,
   options: {
@@ -6,10 +7,6 @@ function fakeFetch(
     body: string;
   }
 ) {
-  const { username, password } = JSON.parse(import.meta.env.VITE_VALID_USER);
-
-  console.log(username + ": " + password);
-
   if (options.method != "POST")
     return Promise.reject({
       status: 405,
@@ -17,8 +14,11 @@ function fakeFetch(
     });
 
   if (
-    JSON.parse(options.body).username?.trim() === username &&
-    JSON.parse(options.body).password?.trim() === password
+    users?.find(
+      (user) =>
+        user.username === JSON.parse(options.body).username?.trim() &&
+        user.password === JSON.parse(options.body).password
+    )
   ) {
     return Promise.resolve({
       status: 200,
