@@ -7,6 +7,25 @@ body {
   touch-action: pan-x pan-y;
 }
 
+/* START Hide default input password eye START */
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="password"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="password"]::-webkit-input-placeholder {
+  display: none;
+}
+/* END Hide default input password eye END */
+
 @theme {
   /* primary */
   --color-primary: #04347f;
